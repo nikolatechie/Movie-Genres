@@ -36,7 +36,7 @@ class IMDB_Scraper:
 
             for container in movie_containers:
                 try:
-                    title = container.h3.a.text
+                    title = str(container.h3.a.text).replace(',', '')
                     year = str(container.h3.find('span', class_ = 'lister-item-year text-muted unbold').text)
                     yearFound = False
 
