@@ -62,7 +62,7 @@ class IMDB_Scraper:
 
     def scrape_movies(self):
         try:
-            headers = 'Genre,Total movies with this genre,Title,Year,Length,Rating\n'
+            headers = 'Genre,Total movies with this genre,Title,Year,Rating,Length\n'
             movies_file = open('Movies.csv', 'w')
             movies_file.write(headers)
 
